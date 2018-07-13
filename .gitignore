@@ -1,0 +1,5 @@
+nimclipboard
+nimcache
+*.exe
+*.swp
+test*
