@@ -8,6 +8,7 @@ when defined(windows):
   let val = "nimclipboard rocks"
   assert cb.clipboard_set_text(val) == true
   assert cb.clipboard_text() == val
-  assert cb.clipboard_set_text(saved) == true
+  if saved.len() != 0:
+    assert cb.clipboard_set_text(saved) == true
 
 cb.clipboard_free()
