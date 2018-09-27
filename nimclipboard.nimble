@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "genotrance"
 description   = "Nim wrapper for libclipboard"
 license       = "MIT"
@@ -15,13 +15,13 @@ import distros
 
 var cmd = ""
 if detectOs(Windows):
-    cmd = "cmd /c "
+  cmd = "cmd /c "
 
 task setup, "Download and generate":
-    exec cmd & "nimgen nimclipboard.cfg"
+  exec cmd & "nimgen nimclipboard.cfg"
 
 before install:
-    setupTask()
+  setupTask()
 
 task test, "Test nimclipboard":
-    exec "nim c -r tests/tclip.nim"
+  exec "nim c -r tests/tclip.nim"
