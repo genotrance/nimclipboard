@@ -27,4 +27,4 @@ before install:
   setupTask()
 
 task test, "Run tests":
-  exec "nim cpp -r tests/t" & name & ".nim"
+  exec "nim c -r tests/t" & name & ".nim"
