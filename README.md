@@ -7,11 +7,7 @@ __Installation__
 Nimclipboard can be installed via [Nimble](https://github.com/nim-lang/nimble):
 
 ```
-> nimble install nimgen
-
-> git clone https://github.com/genotrance/nimclipboard
-> cd nimclipboard
-> nimble install
+> nimble install nimclipboard
 ```
 
 This will download, wrap and install nimclipboard in the standard Nimble package location, typically ~/.nimble. Once installed, it can be imported into any Nim program.
